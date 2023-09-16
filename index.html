@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculadora Basal</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="scriptt.js" defer></script>
-    </head>
-    <body >
-        <div id="contenedor">
-            <div id="calculadora">
-                <div class="contenido">
-                    <h1 id="titulo">Hidratacion Basal </h1> 
-                    <p class="item">Completa todos los datos</p>
-                    <input class="item" id="peso" type="number" placeholder="Peso del paciente en kg"/>
-                    <p class="item" id="error">* Debe completar todos los datos</p>
-                    <button class="item" id="calcular">Calcular</button>
-                    <p class="item resultado" id="flu">71cc/h</p>
-                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
-               </div>
-            </div>
+<head>
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="general">
+        <div class="contenido">
+            <div id="calculos">
+
+                <h1>Calculadora IMC</h1>
+                <h3>( Indice de masa corporal )</h2>
+                
+                <p>Ingrese peso</p>
+                <input id="peso" type="number" placeholder="Peso en kg"/>
+                <p>Ingrese altura</p>
+                <input id="altura" type="number" placeholder="Altura en cm" /><br>
+                <p  id="error">COMPLETE TODOS LOS DATOS</p>
+                <button id="calcular">CALCULAR</button>
+                <button id="borrar">BORRAR</button>
+                <p id="respuesta">RESULTADO</p>
+                <h2 class="resultado" id="indice"  ></h2>
+                <p id="mensaje" class="resultado"></p>
+            </div> 
+       </div> 
+       <div class="contenido"> 
             <div id="detalle">
-                <div class="contenido">
-                    <h1>¿Como se calcula?</h1>
-                    <ul>
-                        <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-                        <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-                    </ul>
-                </div>
-           </div>
+                <h1>¿Como se calcula?</h1>
+                <p> (IMC = peso (kg)/ [estatura (m)]2)</p>
+                <ul>
+                    <li>Peso inferior al normal IMC menor de 18.5</li>
+                    <li>Peso Normal IMC 18.5 a 24.9</li>
+                    <li>Peso superior al normal IMC	25.0 a 29.9</li>
+                    <li>Obesidad IMC superior a 30.0</li>
+                    <img src="https://static.tuasaude.com/media/article/me/dr/imc_15748_l.jpg" id="foto" ></img>
+                </ul>
+            </div>
        </div>
-    </body>
-</html>
+   </div>
+</body>
+
+</html> 
